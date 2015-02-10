@@ -1,0 +1,2 @@
+Riga 19: la classe RichTextLib.RichTextBox del controllo rtbVisible non era una classe di controllo caricata.
+Riga 91: la classe RichTextLib.RichTextBox del controllo rtbHidden non era una classe di controllo caricata.

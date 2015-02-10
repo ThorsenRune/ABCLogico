@@ -740,9 +740,6 @@ Public Sub mAlignCommands()     'Sort of a compile command
   c.IsFixed = False
   Set c.Container = fProgramList
   yPos = 0
-  For Each c In oInstr                'Remove coloring
-    c.BackColor = eExeColor.Passive
-  Next
   For Each c In oProcedure
     If c.Visible And c.Container Is fProgramList Then 'skip
       c.Top = yPos:  c.Left = lLnNr(0).Width:    c.Width = Abs(fProgramList.ScaleWidth - 1 * c.Left)

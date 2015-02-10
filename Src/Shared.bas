@@ -27,8 +27,8 @@ Public Sub SetDataDir()
   sPathBin = CurDir + "\bin"
   If Dir(sPathData, vbDirectory) = "" Then MkDir sPathData
   If Dir(sPathBin, vbDirectory) = "" Then MkDir sPathBin
-  sFileHelp = sPathData$ + "\ABCL_Help_" & sLang & ".RTF"
-  sFileText$ = sPathData$ + "\ABCL_Text_" & sLang & ".TXT"
+  sFileHelp = sPathBin + "\ABCL_Help_" & sLang & ".RTF"
+  sFileText$ = sPathBin + "\ABCL_Text_" & sLang & ".TXT"
   sFileSettings$ = oIniFile.FileMyIni
 End Sub
 Public Sub mUserProg_Save()
@@ -67,14 +67,14 @@ Public Sub StatusRefresh(c As Control)
   txt = GetDescrByCtrl(c)
   fConsole.ucStatusBar1.Value = txt$ & ": x=" & Fix(c.Left + 0.5) & ",  y=" & Fix(c.Top - 0.5)
 End Sub
-Public Property Let vCatPosX(val&)
-  fConsole.oCat(vDirection).Left = val&
+Public Property Let vCatPosX(Val&)
+  fConsole.oCat(vDirection).Left = Val&
 End Property
 Public Property Get vCatPosX&()
   vCatPosX& = fConsole.oCat(vDirection).Left
 End Property
-Public Property Let vCatPosY(val&)
-  fConsole.oCat(vDirection).Top = val& + 1
+Public Property Let vCatPosY(Val&)
+  fConsole.oCat(vDirection).Top = Val& + 1
 End Property
 Public Property Get vCatPosY&()
   vCatPosY = fConsole.oCat(vDirection).Top - 1
