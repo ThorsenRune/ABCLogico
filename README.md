@@ -51,7 +51,7 @@ Test di condizioni (presenza cibo, cane)
 III.    
 Esecuzioni o salto condizionale (if-then, for-next loop)
 
-           #### **A chi e diretto**
+#### **A chi e diretto**
 
 "ABC Logico - il gatto di
 turing" è rivolto a giovani di 6-10 anni di età e ai loro genitori. Si
