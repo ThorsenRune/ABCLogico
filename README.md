@@ -3,8 +3,6 @@
 Primi passi di programmazione per
 bambini 
 
-[Installazione]()
-
 #### **Presentazione**
 
  
